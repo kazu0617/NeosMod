@@ -1,0 +1,3 @@
+[submodule "VRMImporter"]
+	path = VRMImporter
+	url = https://github.com/kazu0617/VRMImporter
