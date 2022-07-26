@@ -56,24 +56,6 @@
             }
         },
         {
-            "label": "build VRMLImporter",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "-noLogo",
-                "-p:Configuration=Release",
-                "${workspaceFolder}/VRMLImporter/VRMLImporter.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
             "label": "build VRMImporter",
             "command": "dotnet",
             "type": "process",
@@ -90,42 +72,6 @@
                 "kind": "build",
                 "isDefault": true
             }
-        },
-        {
-            "label": "build",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/VRMLImporter/VRMLImporter.Tests/VRMLImporter.Tests.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "publish",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "publish",
-                "${workspaceFolder}/VRMLImporter/VRMLImporter.Tests/VRMLImporter.Tests.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "watch",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/VRMLImporter/VRMLImporter.Tests/VRMLImporter.Tests.csproj"
-            ],
-            "problemMatcher": "$msCompile"
         }
     ]
 }
